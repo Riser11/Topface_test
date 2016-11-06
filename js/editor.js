@@ -64,10 +64,8 @@ window.onload = function () {
 		for (i in tags) {
 			clas = 'tag';
 			for (x in filters) {
-				console.log(tags[i] == filters[x])
 				if (tags[i] == filters[x]) {
 					clas = 'choosenTag';
-					console.log(clas);
 				}
 			}
 			tagdiv.innerHTML += `<p class="${clas}" id="t${i}">${tags[i]}
@@ -83,7 +81,6 @@ window.onload = function () {
 			choosenTag[i].onmouseout = menu_hide;
 			choosenTag[i].onclick = chooseToFilter;
 		}
-		console.log(taglist);
 		tags_check();
 	}
 	//Функция удаления тэга или заметки
@@ -140,7 +137,6 @@ window.onload = function () {
 	}
 	//Функция проверяет текст на наличие тэгов
 	function tags_check() {
-		console.log(textarea.value);
 		let isexist = 0;
 		let text = textarea.value;
 		if (event.key == ' ') {
@@ -180,7 +176,7 @@ window.onload = function () {
 		}
 		refresh();
 	}
-
+//Убираем переход на новую строку по нажатию клавиши энтер
 	function ent() {
 		if (event.key == 'Enter') {
 			event.preventDefault();
