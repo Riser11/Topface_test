@@ -1,0 +1,29 @@
+.container {
+	margin-left: 20%;
+}
+
+#input_textarea {
+	width: 60%;
+}
+
+#note_list_div {
+	width: 30%;
+	float: left;
+}
+
+#tag_list_div {
+	width: 30%;
+	float: left;
+}
+
+.menu_hide {
+	display: none;
+}
+
+.delete_button {
+	width: 13px;
+}
+
+.choosenTag {
+	color: #6A00AD;
+}
